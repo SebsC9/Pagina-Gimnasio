@@ -68,6 +68,11 @@ main {
     margin-bottom: 20px;
 }
 
+.hero-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
 /*Feature Section Styles */
 .features {
     background-image: url(src/Feature-section.jpg);
@@ -76,6 +81,19 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
+}
+
+.features-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* Plans Section Styles */
@@ -83,9 +101,30 @@ main {
     background-image: url(src/plans-image.jpg);
     background-size: cover;
     padding: 120px 30px;
+}
+.plans-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.plans-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+.plan {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.info-plan {
+    font-size: 1.1rem;
+    margin-bottom: 2px;
 }
 
 /* trainers Section Styles */
@@ -96,8 +135,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
+}
+.trainers-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
+.trainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 20px;
+}
 
 
 /* Footer Styles */
@@ -130,20 +181,17 @@ footer {
     justify-content: space-between;
 }
 
-ul .social-links a {
-    display: flex;
-    gap: 15px;
-}
-
 .derechos {
     margin-top: 20px;
     font-size: 0.8rem;
     color: #ffffff;
 }
+.social-link {
+    color: #ffffff;
+    text-decoration: none;
+}
 
-
-/* Overlay Styles */
-/* Agregamos un overlay oscuro a las secciones */   
+/* Oscurecer secciones */
 .hero, .features, .plans, .trainers {
   position: relative;
   z-index: 0;

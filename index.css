@@ -40,10 +40,14 @@ header {
 .menu {
   width: 24px;
   height: 24px;
+  display: block;
 }
 .title {
     font-size: 2rem;
     color: #ffffff;
+}
+nav {
+    display: none;
 }
 
 /* Main Content Styles */
@@ -55,7 +59,7 @@ main {
 
 /* Hero Section Styles */
 .hero {
-    background-image: url(src/Hero-section-image.jpg);
+    background-image: url(src/index/Hero-section-image.webp);
     background-size: cover;
     padding: 120px 30px;
     display: flex;
@@ -75,12 +79,12 @@ main {
 
 /*Feature Section Styles */
 .features {
-    background-image: url(src/Feature-section.jpg);
+    background-image: url(src/index/Feature-section.webp);
     background-size: cover;
     padding: 120px 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
 }
 
@@ -94,11 +98,13 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: center;
+    align-items: center;
 }
 
 /* Plans Section Styles */
 .plans {
-    background-image: url(src/plans-image.jpg);
+    background-image: url(src/index/plans-image.webp);
     background-size: cover;
     padding: 120px 30px;
 }
@@ -115,12 +121,16 @@ main {
     gap: 20px;
 }
 .plan {
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: rgba(18, 18, 18, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(128, 127, 127, 0.3);
+    gap: 10px;
 }
 .info-plan {
     font-size: 1.1rem;
@@ -129,7 +139,7 @@ main {
 
 /* trainers Section Styles */
 .trainers {
-    background-image: url(src/trainers-image.jpg);
+    background-image: url(src/index/trainers-image.webp);
     background-size: cover;
     padding: 120px 30px;
     display: flex;
@@ -150,15 +160,6 @@ main {
     margin-bottom: 20px;
 }
 
-
-/* Footer Styles */
-footer {
-    background-color: #1a1a1a;
-    padding: 15px 30px;
-    text-align: center;
-    color: #ffffff;     
-}   
-
 /* Button Styles */
 .btn {
     border: gray 1px solid;
@@ -168,14 +169,20 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    width: 150px;
 }
 
 .btn:hover {
     background-color: #333333;
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* Footer Styles */
 footer {
+    background-color: #1a1a1a;
+    padding: 20px 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -190,6 +197,77 @@ footer {
     color: #ffffff;
     text-decoration: none;
 }
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    /* Header */
+    header { 
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .nav a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .hero-title {
+        text-align: center;
+    }
+    .hero-text {
+        text-align: center;
+        max-width: 600px;
+    }
+
+    /* Plans Section */
+    .plans {    
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        min-height: 600px;
+    }
+    .plans-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 120px;
+    }
+    
+    /* Trainers Section */
+    .trainers {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .btn{
+        width: 200px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+
+
 
 /* Oscurecer secciones */
 .hero, .features, .plans, .trainers {

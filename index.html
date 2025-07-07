@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="src/favicon/favicon.ico">
     <link rel="stylesheet" href="index.css">
     <title>Code-Fit</title>
 </head>
@@ -16,55 +17,68 @@
         <svg class="menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.5">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#plans">Planes</a></li>
+                <li><a href="#trainers">Entrenadores</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section id="hero" class="hero">
             <h2 class="hero-title">Bienvenido a Code-Fit</h2>
             <p class="hero-text">Tu gimnasio de confianza para alcanzar tus metas, entrenar y mejorar tu salud</p>
             <button class="btn btn-comenzar">Comenzar</button>
         </section>
-        
-        <section class="features">
+
+        <section id="features" class="features">
             <h2 class="features-title">Características</h2>
             <ul class="features-list">
                 <li>Entrenamientos personalizados</li>
+                <img src="src/svg-features/biceps-flexed.svg" alt="entrenamiento">
                 <li>Seguimiento de progreso</li>
+                <img src="src/svg-features/list-checks.svg" alt="seguimiento de progreso">
                 <li>Comunidad activa</li>
+                <img src="src/svg-features/users-round (1).svg" alt="comunidad activa">
                 <li>Asesoramiento nutricional</li>
+                <img src="src/svg-features/salad.svg" alt="asesoramiento nutricional">
             </ul>
         </section>
 
-        <section class="plans">
+        <section id="plans" class="plans">
             <h2 class="plans-title">Planes de Membresía</h2>
             <div class="plans-container">
                 <div class="plan">
-                    <h3>Plan Básico</h3>
+                    <h2>Plan Básico</h2>
                     <p class="info-plan">5 días a la semana</p>
-                    <p class="info-plan">plan de entrenamiento</p>
-                    <p >$20.000/mes</p>
+                    <p class="info-plan">Plan de entrenamiento</p>
+                    <p>$20.000/mes</p>
                     <button class="btn">Elegir Plan</button>
                 </div>
                 <div class="plan">
-                    <h3>Plan Premium</h3>
+                    <h2>Plan Premium</h2>
                     <p class="info-plan">7 días a la semana</p>
-                    <p class="info-plan">plan de entrenamiento</p>
-                    <p class="info-plan">plan nutricional</p>
+                    <p class="info-plan">Plan de entrenamiento</p>
+                    <p class="info-plan">Plan nutricional</p>
                     <p>$30.000/mes</p>
                     <button class="btn">Elegir Plan</button>
                 </div>
             </div>
         </section>
 
-        <section class="trainers">
+        <section id="trainers" class="trainers">
             <h2 class="trainers-title">Nuestros Entrenadores</h2>
             <div class="trainer">
-                <h3>Juan Pérez</h3>
+                <h2>Juan Pérez</h2>
                 <p>Especialista en entrenamiento funcional y musculacion</p>
             </div>
             <div class="trainer">
-                <h3>María López</h3>
-                <p>Experta en nutrición y dietética</p>
+                <h2>María López</h2>
+                <p>Experta en nutrición</p>
             </div>
         </section>
     </main>
